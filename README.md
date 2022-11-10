@@ -49,5 +49,16 @@ Functionality {
     -Rating ability
 
   View profile with all your lists, stats
+    -different graphical representation 
+    -interactive
+
     
 }
+
+Components [
+  Navbar
+  Homepage
+  Profile page
+  
+
+]
