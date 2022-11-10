@@ -1,44 +1,53 @@
 # QA-React-Project
 Idea for the QA React project
-Letterboxd clone app
+
+TASK BRIEF:
+Movie stats app
+-simple login for user differentiation 
+-search for and log watched movies using api/database
+-display comprehensive statistics on the user/movies
+
+DELIVERABLES:
+-features: user recognition, movie searching, movie logging, creative stats display
+-consider access control (credentials check on query)  
+-Testing scripts
+
+
+LEARNING OUTCOMES:
+-Using more advanced hooks
+-Professional structuring 
+-React router
+-Testing 
+
+SUITABLE TOOLS:
+React-(Typescript), Express, Node, Database(Mongo)
+/React-(Typescript), React JSON server
+
+
 
 Functionality {
-  Homepage 
-    -posters of latest films
+  Homepage [
+    -Posters of latest films
       -clickable 
       -leads to film info page
-    -navbar 
+    -Navbar { 
       -profile homepage
-        -watched stats 
+        -watched stats (ratings spread, time spent, top genres, year by year breakdown 
       -watched
-        -poster
-        -your rating
-        -review
-      -watch list
-        -order by rating, genre
-    -search bar
-
+        -poster look
+        -your ratings
+    }
+    -Search bar
+  ]
 
   Find films from a database
     -search bar 
     -return poster, title, rating, length, release date, director, reviews, description
   
-  Add to watch-list
-    -toggle button
-  
   Add to watched-list 
     -toggle button 
-  
-  Create reviews
-    -text box input 
-    -submit button
-    -rating prompt
-  
-  View others reviews
-    -reviews page
-    -displays user reviews 
-    -display ratings
+    -Rating ability
 
-  View profile with all your lists, reviews
+  View profile with all your lists, stats
     
 }
