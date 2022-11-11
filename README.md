@@ -57,8 +57,12 @@ Functionality {
 
 Components [
   Navbar
+  Search
   Homepage
+  Films List 
   Profile page
-  
+  StatsNav
+  #Different stats
+  Number of films seen vs year graph
 
 ]
