@@ -1,9 +1,10 @@
 # QA-React-Project
+
 Idea for the QA React project
 
 TASK BRIEF:
 Movie stats app
--simple login for user differentiation 
+-simple login for user differentiation
 -search for and log watched movies using api/database
 -display comprehensive statistics on the user/movies
 
@@ -12,57 +13,57 @@ DELIVERABLES:
 -consider access control (credentials check on query)  
 -Testing scripts
 
-
 LEARNING OUTCOMES:
 -Using more advanced hooks
--Professional structuring 
+-Professional structuring
 -React router
--Testing 
+-Testing
 
 SUITABLE TOOLS:
 React-(Typescript), Express, Node, Database(Mongo)
 /React-(Typescript), React JSON server
 
-
-
 Functionality {
-  Homepage [
-    -Posters of latest films
-      -clickable 
-      -leads to film info page
-    -Navbar { 
-      -profile homepage
-        -watched stats (ratings spread, time spent, top genres, year by year breakdown 
-      -watched
-        -poster look
-        -your ratings
-    }
-    -Search bar
-  ]
+Homepage [
+-Posters of latest films
+-clickable
+-leads to film info page
+-Navbar {
+-profile homepage
+-watched stats (ratings spread, time spent, top genres, year by year breakdown
+-watched
+-poster look
+-your ratings
+}
+-Search bar
+]
 
-  Find films from a database
-    -search bar 
-    -return poster, title, rating, length, release date, director, reviews, description
-  
-  Add to watched-list 
-    -toggle button 
-    -Rating ability
+Find films from a database
+-search bar
+-return poster, title, rating, length, release date, director, reviews, description
 
-  View profile with all your lists, stats
-    -different graphical representation 
-    -interactive
+Add to watched-list
+-toggle button
+-Rating ability
 
-    
+View profile with all your lists, stats
+-different graphical representation
+-interactive
+
 }
 
 Components [
-  Navbar
-  Search
-  Homepage
-  Films List 
-  Profile page
-  StatsNav
-  #Different stats
-  Number of films seen vs year graph
+Navbar
+Search
+Homepage
+Profile page
+StatsNav(ordered by: 
+  time(years by number, total time, years by rating), 
+  genres(genre blobs by number, genre by ratings), 
+  location(countries by number, languages by number, countries by map))
+
+#Stats components
+Number of films seen vs year graph
+Genre (by number) blobs-click through to those films
 
 ]
