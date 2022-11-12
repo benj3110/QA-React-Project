@@ -1,33 +1,33 @@
 # React-Project
-# TASK BRIEF:
+## TASK BRIEF:
 Movie stats app
 -simple login for user differentiation
 -search for and log watched movies using api/database
 -display comprehensive statistics on the user/movies
 
-# DELIVERABLES:
+## DELIVERABLES:
 -features: user recognition, movie searching, movie logging, creative stats display
 -consider access control (credentials check on query)  
 -Testing scripts
 
-# LEARNING OUTCOMES:
+## LEARNING OUTCOMES:
 -Using more advanced hooks
 -Professional structuring
 -React router
 -Testing
 
-# SUITABLE TOOLS:
+## SUITABLE TOOLS:
 React-(Typescript), Express, Node, Database(Mongo)
 /React-(Typescript), React JSON server
 
-# Functionality {
+## Functionality (
 Homepage [
 -Posters of latest films
 -clickable
 -leads to film info page
 -Navbar {
 -profile homepage
--watched stats (ratings spread, time spent, top genres, year by year breakdown
+-watched stats (ratings spread, time spent, top genres, year by year breakdown)
 -watched
 -poster look
 -your ratings
@@ -47,9 +47,9 @@ View profile with all your lists, stats
 -different graphical representation
 -interactive
 
-}
+)
 
-# Components [
+## Components [
   Navbar
   Search
   Homepage
@@ -59,7 +59,7 @@ View profile with all your lists, stats
     genres(genre blobs by number, genre by ratings), 
     location(countries by number, languages by number, countries by map))
 
-  ## Stats generate components
+  ### Stats generate components
   Number of films seen vs year (line graph)
   Total time calculator
   No. of stars vs Years (bar graph)
@@ -69,27 +69,31 @@ View profile with all your lists, stats
   Languages by number (bar graph)
   Countries by (map)
 
-  ## Stats display components
+  ### Stats display components
   Line Graph
   Bar graph
   Blobs
   Map
 ]
 
-# Mongo Database schema {
+## Mongo Database schema (
   Document: A User {
-    MoviesSeen: [{
-      MovieTitle: "Title",
-      MovieYear: Year,
-      MovieSynopsis: "The Synopsis",
-      MovieGenre: ["All Genres",],
-      MovieRuntime: Minutes,
-      MovieRating: X/10,
-      MovieCountry: "Country",
-      MovieLang: "Language"}, 
-    {x...}],
-    UserName: "Name",
     UserID: ID,
+    UserName: "Name",
+    MoviesSeen: [{
+      MovieID: "Title+Year", 
+      MovieRating: X/10}]
   } 
-}
+
+  Document: A Movie {
+    MovieID: "Title+Year",
+    MovieTitle: "Title",
+    MovieYear: Year,
+    MovieRuntime: Minutes,
+    MovieGenre: ["All Genres"],
+    MovieSynopsis: "The Synopsis",
+    MovieLang: "Language",
+    MovieCountry: "Country"
+  }
+)
 
