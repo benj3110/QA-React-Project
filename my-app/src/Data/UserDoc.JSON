@@ -1,8 +1,15 @@
-{"user":[{
+{"users":[{
   "_id": 1234567890, 
   "UserID": "ID Num",
   "UserName": "Benito",
   "MoviesSeen": [{
-    "MovieID": "Title+Year", 
+    "MovieID": "Paprika2006", 
+   "MovieRating": 10},
+   {
+    "MovieID": "ChungkingExpress1994", 
+   "MovieRating": 10},
+   {
+    "MovieID": "TheRaid22014", 
    "MovieRating": 10}]
-}]}
+}]
+}

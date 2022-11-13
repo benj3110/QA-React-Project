@@ -53,6 +53,8 @@ View profile with all your lists, stats
   Navbar
   Search
   Homepage
+  FilmsList
+  FilmDisplay
   Profile page
   StatsNav(ordered by: 
     time(years by number, total time, years by rating), 
@@ -76,24 +78,35 @@ View profile with all your lists, stats
   Map
 ]
 
+## Component Hierarchy{
+  App
+    Search bar
+    Navbar
+      Homepage
+        FilmsList
+          FilmDisplay
+      Profile page
+
+} 
+
 ## Mongo Database schema (
-  Document: A User {
+  {"users":[{
     UserID: ID,
     UserName: "Name",
     MoviesSeen: [{
       MovieID: "Title+Year", 
       MovieRating: X/10}]
-  } 
+  }]} 
 
-  Document: A Movie {
-    MovieID: "Title+Year",
-    MovieTitle: "Title",
-    MovieYear: Year,
-    MovieRuntime: Minutes,
-    MovieGenre: ["All Genres"],
-    MovieSynopsis: "The Synopsis",
-    MovieLang: "Language",
-    MovieCountry: "Country"
-  }
+  {"films": [{
+    "MovieID": "Title+Year",
+    "MovieTitle": "Title",
+    "MovieYear": Year,
+    "MovieRuntime": Minutes,
+    "MovieGenre": ["All Genres"],
+    "MovieSynopsis": "The Synopsis",
+    "MovieLang": "Language",
+    "MovieCountry": "Country"
+  }]}
 )
 
