@@ -1,0 +1,8 @@
+{"user":[{
+  "_id": 1234567890, 
+  "UserID": "ID Num",
+  "UserName": "Benito",
+  "MoviesSeen": [{
+    "MovieID": "Title+Year", 
+   "MovieRating": 10}]
+}]}

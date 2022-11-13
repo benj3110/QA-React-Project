@@ -3,13 +3,23 @@ import React from "react";
 import Home from "./Home";
 import Profile from "./Profile";
 
-
 const NavBar = () => {
   return (
+    // Router wrap over everything.
+    //Nav wrap.
+    //No 'li' or 'a href', 'Link' 'to' syntax instead.
+    //'Routes' wrap for all routes.
+    //Route wrap for a individual route, path for page path and element for the component to call.
     <Router>
       <nav>
-        <Link className="LinkClass" to = "/"> Home </Link>
-        <Link className="LinkClass" to = "/Profile"> Profile </Link>
+        <Link className="LinkClass" to="/">
+          {" "}
+          Movie Stats App{" "}
+        </Link>
+        <Link className="LinkClass" to="/Profile">
+          {" "}
+          Profile{" "}
+        </Link>
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
