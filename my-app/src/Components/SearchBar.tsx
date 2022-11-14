@@ -5,7 +5,7 @@ const SearchBar = () => {
   
   
 
-  const handleSearch= (e:any) => {
+  const handleSearch= (e:React.FormEvent<HTMLElement>): void => {
     e.preventDefault()
     const SearchSubmit = (searchInput)
     console.log(SearchSubmit)
