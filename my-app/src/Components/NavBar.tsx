@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import '../CSS/NavBar.css'
 
 
 
@@ -8,20 +9,19 @@ const NavBar = () => {
     
     //Nav wrap.
     //No 'li' or 'a href', 'Link' 'to' syntax instead.
-    
-    <div>
-      <nav>
-        <Link className="HomeLink" to="/">
-          {" "}
-          Movie Stats App{" "}
-        </Link>
-        
-        <Link className="ProfileLink" to="/Profile">
-          {" "}
-          Profile{" "}
-        </Link>
-      </nav>
-    </div>
+  
+    <nav className="Nav-Bar">
+      <Link className="Nav-Link" to="/">
+        {" "}
+        Movie Stats App{" "}
+      </Link>
+
+      <Link className="Nav-Link" to="/Profile">
+        {" "}
+        Profile{" "}
+      </Link>
+    </nav>
+  
   );
 };
 

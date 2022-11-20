@@ -1,0 +1,10 @@
+.Search-Bar{
+  background: #fff;
+    height: 27px;
+    border-radius: 40px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: right;
+    
+}
+

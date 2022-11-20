@@ -1,4 +1,4 @@
-.Nav-bar{
+.Nav-Bar{
   height: 40px;
   width: 100%;
   display: flex;
@@ -9,13 +9,9 @@
   background-color: rgb(183, 179, 179);
 }
 
-.HomeLink {
+.Nav-Link {
   text-decoration: none;
   cursor: pointer;
   
 }
 
-.ProfileLink {
-  text-decoration: none;
-  cursor: pointer;
-}

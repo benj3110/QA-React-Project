@@ -1,7 +1,7 @@
 import React from 'react';
-import './App.css';
-import SearchBar from "./Components/SearchBar";
-import MyRouter from './Components/MyRouter'
+import '../CSS/App.css';
+import SearchBar from "../Components/SearchBar";
+import MyRouter from '../Components/MyRouter'
 
 function App() {
   return (
