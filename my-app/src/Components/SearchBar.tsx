@@ -12,10 +12,12 @@ const SearchBar = () => {
   }
 
   return (
-    <form onSubmit = {handleSearch}>
-      <input type="text" value = {searchInput} onChange={e => setSearchInput(e.target.value)}/>
-      <button>Search</button>
-    </form>
+    <div className="SearchBarClass">
+      <form onSubmit = {handleSearch}>
+        <input type="text" value = {searchInput} onChange={e => setSearchInput(e.target.value)}/>
+        <button>Search</button>
+      </form>
+    </div>
   );
 };
 
