@@ -15,6 +15,7 @@ const NavBar = () => {
           {" "}
           Movie Stats App{" "}
         </Link>
+        
         <Link className="ProfileLink" to="/Profile">
           {" "}
           Profile{" "}
