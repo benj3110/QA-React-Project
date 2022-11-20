@@ -7,7 +7,7 @@ import Profile from './Profile'
 const MyRouter = () => {
   // Router wrap over everything.
   //'Routes' wrap for all routes.
-    //Route wrap for a individual route, path for page path and element for the component to call.
+  //Route wrap for a individual route, path for page path and element for the component to call.
   return ( 
     <BrowserRouter> 
       <NavBar />
