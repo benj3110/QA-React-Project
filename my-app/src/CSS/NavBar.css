@@ -1,17 +1,37 @@
 .Nav-Bar{
-  height: 40px;
+  border: black solid 3px;
+ 
+  background-color: hsl(210, 79%, 55%);
+  
   width: 100%;
+  
+  
   display: flex;
-  align-items: center;
   justify-content: space-around;
-  position: relative;
-  padding: 0.5rem 0rem;
-  background-color: rgb(183, 179, 179);
+  align-items: center;
+  position: sticky;
 }
 
 .Nav-Link {
+  border: black solid 3px;
+  
+  color: rgb(0, 0, 0);
+  
   text-decoration: none;
-  cursor: pointer;
+  font-size: larger;
+  
+
   
 }
+
+.Search-Bar{
+  border: black solid 3px;
+  background: hsl(210, 79%, 55%);
+  
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+    
+}
+
 

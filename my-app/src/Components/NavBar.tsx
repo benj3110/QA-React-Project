@@ -1,10 +1,21 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
-import '../CSS/NavBar.css'
+import '../CSS/NavBar.css';
 
 
+//* NAVBAR CONTAINS THE LINKS TO MOVIES & PROFILE PAGE AND THE SEARCH BAR 
 
 const NavBar = () => {
+  const [searchInput, setSearchInput] = useState<string>("");
+  
+  
+
+  const handleSearch= (e:React.FormEvent<HTMLElement>): void => {
+    e.preventDefault()
+    const SearchSubmit = (searchInput)
+    console.log(SearchSubmit)
+  }
+
   return (
     
     //Nav wrap.
@@ -13,14 +24,25 @@ const NavBar = () => {
     <nav className="Nav-Bar">
       <Link className="Nav-Link" to="/">
         {" "}
-        Movie Stats App{" "}
+        Movies{" "}
       </Link>
 
       <Link className="Nav-Link" to="/Profile">
         {" "}
         Profile{" "}
       </Link>
+
+
+      <div className="Search-Bar">
+        <form onSubmit = {handleSearch}>
+          <input type="text" value = {searchInput} onChange={e => setSearchInput(e.target.value)}/>
+          <button>Search</button>
+        </form>
+      </div>
+
     </nav>
+
+    
   
   );
 };
