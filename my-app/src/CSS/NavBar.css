@@ -18,8 +18,8 @@
   color: rgb(0, 0, 0);
   
   text-decoration: none;
-  font-size: larger;
   
+  padding: 0.5%;
 
   
 }
@@ -29,6 +29,7 @@
   background: hsl(210, 79%, 55%);
   
   border-radius: 40px;
+  padding: 0.4%;
   display: flex;
   justify-content: center;
     

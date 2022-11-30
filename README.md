@@ -85,6 +85,7 @@ View profile with all your lists, stats
       Homepage
         FilmsList
           FilmDisplay
+            APIs
       Profile page
 
 } 
