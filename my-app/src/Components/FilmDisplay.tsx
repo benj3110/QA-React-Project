@@ -1,5 +1,6 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import Axios, {AxiosResponse} from "axios";
+import { FilmGet } from "./Apis"
 
 
 const FilmDisplay = () => {
@@ -21,6 +22,11 @@ const FilmDisplay = () => {
     
   // })
 
+  const popular:string = "popular"
+
+  
+  //FilmGet(popular);
+  //console.log(FilmGet(popular))
 
 
 
