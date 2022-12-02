@@ -1,37 +1,43 @@
-import React, { useState } from "react";
-import Axios, {AxiosResponse} from "axios";
-import { FilmGet } from "./Apis"
+import { useEffect, useState } from "react";
+import { GetFilms } from "./Apis"
 
 
 const FilmDisplay = () => {
   
-  // useEffect(() => {
-  //   const x = async () => { 
-      
-  //     const popular: AxiosResponse<any, any>| void = await Axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=${process.env.REACT_APP_TMDB_API_KEY}&language=en-US&page=1`).then(
-  //       function (res) {
-  //         console.log(res.data.results)
-  //       }).catch(function (err) {
-  //         console.log(err)
-  //       })
-       
-      
-  //   }
-
-  //   x();
-    
-  // })
-
-  const popular:string = "popular"
 
   
-  //FilmGet(popular);
-  //console.log(FilmGet(popular))
+  
+  //defining the api to get popular films
+  const popular:string = "popular";
+  const [popularFilms, setPopularFilms] = useState<null| Array<Object>>(null)
+  //useEffect to render on page render?/mount?
+  //async function that await the API call in GetFilms 
+  useEffect(()=>{
+    const popularFilmsWrap: () => Promise<void> = async () => {
+      setPopularFilms(await GetFilms(popular))
+    
+    }
+    popularFilmsWrap()
+  },[])
+
+  //
+  useEffect(()=>{
+    //todo fix types within the object
+    console.log(popularFilms ? popularFilms[0]['original_title'] : "nothing")
+
+  },[popularFilms]);
+
+
+    
+
+
 
 
 
   return ( <div>
-    
+    <p>
+      {/* {popularFilms ? popularFilms[0].toString(): "null"} */}
+    </p>
 
   </div> );
 }
