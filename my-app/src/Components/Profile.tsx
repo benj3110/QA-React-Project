@@ -1,4 +1,4 @@
-import DataTest from "../CompTests/DataTest";
+import DataTest from "../TestComp/DataTest";
 
 
 const Profile = () => {
