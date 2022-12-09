@@ -20,28 +20,28 @@ const NavBar = () => {
     
     //Nav wrap.
     //No 'li' or 'a href', 'Link' 'to' syntax instead.
-  
-    <nav className="Nav-Bar">
-      <Link className="Nav-Link" to="/">
-        {" "}
-        Movies{" "}
-      </Link>
+    <header>
+      <nav className="Nav-Bar">
+        <Link className="Nav-Link" to="/">
+          {" "}
+          Movies{" "}
+        </Link>
 
-      <Link className="Nav-Link" to="/Profile">
-        {" "}
-        Profile{" "}
-      </Link>
+        <Link className="Nav-Link" to="/Profile">
+          {" "}
+          Profile{" "}
+        </Link>
 
 
-      <div className="Search-Bar">
-        <form onSubmit = {handleSearch}>
-          <input type="text" value = {searchInput} onChange={e => setSearchInput(e.target.value)}/>
-          <button>Search</button>
-        </form>
-      </div>
+        <div className="Search-Bar">
+          <form onSubmit = {handleSearch}>
+            <input type="text" value = {searchInput} onChange={e => setSearchInput(e.target.value)}/>
+            <button>Search</button>
+          </form>
+        </div>
 
-    </nav>
-
+      </nav>
+    </header>
     
   
   );

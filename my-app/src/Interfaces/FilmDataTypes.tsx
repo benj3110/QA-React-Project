@@ -1,4 +1,4 @@
-export default interface filmDataObject{
+export default interface filmDataTypes{
   title: string
   overview: string
   poster_path: string

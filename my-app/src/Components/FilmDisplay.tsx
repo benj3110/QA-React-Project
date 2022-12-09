@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
 import { GetFilms } from "./Apis";
 import FilmDataTypes from "../Interfaces/FilmDataTypes";
-import filmDataObject from "../Interfaces/FilmDataTypes";
+import "../CSS/FilmBox.css";
 
 const FilmDisplay = () => {
 	const popular: string = "popular";
-	const [filmsData, setFilmsData] = useState<null | filmDataObject[]>(null);
+	const [filmsData, setFilmsData] = useState<null | FilmDataTypes[]>(null);
 	const images: {
-    baseURL: string;
-    posterSize: string[];
-  } = {
+		baseURL: string;
+		posterSize: string[];
+	} = {
 		baseURL: "https://image.tmdb.org/t/p/",
 		posterSize: ["w92", "w154", "w185", "w342", "w500", "w780", "original"],
 	};
@@ -26,22 +26,24 @@ const FilmDisplay = () => {
 		popularFilmsWrap();
 	}, []);
 
-	useEffect(() => {
-		if (filmsData) {
-			console.log(filmsData);
-		}
-	}, [filmsData]);
+	// useEffect(() => {
+	// 	if (filmsData) {
+	// 		console.log(filmsData);
+	// 	}
+	// }, [filmsData]);
 
 	return (
-		<div>
+		<div className="allFilms_C">
 			{filmsData?.map((filmData) => {
 				return (
-					<div>
-						<p>{filmData.title}</p>
-						<p>{filmData.overview}</p>
+					<div key={filmData.poster_path} className="eachFilm_C">
+						<p className="filmTitle_C">{filmData.title}</p>
+						{/* <p>{filmData.overview}</p> */}
 						<img
+							className="filmPoster_C"
 							src={
-								images.baseURL+images.posterSize[2]+
+								images.baseURL +
+								images.posterSize[2] +
 								filmData.poster_path
 							}
 							alt=""
