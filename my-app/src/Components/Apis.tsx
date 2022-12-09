@@ -4,6 +4,7 @@ import FilmDataTypes from "../Interfaces/FilmDataTypes"
 
 
 export async function GetFilms (props:string): Promise<FilmDataTypes[] | null> {
+  
   let popular: string
   popular = props
 
