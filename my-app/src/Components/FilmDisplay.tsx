@@ -26,12 +26,6 @@ const FilmDisplay = () => {
 		popularFilmsWrap();
 	}, []);
 
-	// useEffect(() => {
-	// 	if (filmsData) {
-	// 		console.log(filmsData);
-	// 	}
-	// }, [filmsData]);
-
 	return (
 		<div className="allFilms_C">
 			{filmsData?.map((filmData) => {
@@ -47,6 +41,7 @@ const FilmDisplay = () => {
 								filmData.poster_path
 							}
 							alt=""
+							onClick={() => console.log("click")}
 						/>
 					</div>
 				);

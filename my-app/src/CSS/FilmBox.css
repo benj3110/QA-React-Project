@@ -2,7 +2,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1%;
-    position: relative;
     justify-self: center;
 }
 
@@ -11,10 +10,11 @@
     
 }
 
-/* .filmTitle_C{
-
-} */
 
 .filmPoster_C{
     border: black solid 3px;
+}
+
+.filmPoster_C:hover{
+    filter: brightness(60%);
 }
