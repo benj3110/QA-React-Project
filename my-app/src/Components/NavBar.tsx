@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../CSS/NavBar.css";
 
-//* NAVBAR CONTAINS THE LINKS TO MOVIES & PROFILE PAGE AND THE SEARCH BAR
+//* NAVBAR CONTAINS THE LINKS TO THE MOVIES & PROFILE PAGE, & THE SEARCH BAR
 
 const NavBar = () => {
 	const [searchInput, setSearchInput] = useState<string>("");

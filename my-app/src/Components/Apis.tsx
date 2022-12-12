@@ -1,6 +1,7 @@
 import Axios, { AxiosResponse } from "axios";
 import FilmDataTypes from "../Interfaces/FilmDataTypes";
 
+//* ALL API CALLS
 export async function GetFilms(props: string): Promise<FilmDataTypes[] | null> {
 	let popular: string;
 	popular = props;

@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import FilmDisplay from "./FilmDisplay";
 import Home from "./Home";
 import NavBar from "./NavBar";
 import Profile from "./Profile";
@@ -14,6 +15,7 @@ const MyRouter = () => {
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/Profile" element={<Profile />} />
+        <Route path="/Film" element={<FilmDisplay />} />
 			</Routes>
 		</BrowserRouter>
 	);
