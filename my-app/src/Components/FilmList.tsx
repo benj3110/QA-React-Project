@@ -27,7 +27,8 @@ const FilmList = () => {
 
 		popularFilmsWrap();
 	}, []);
-
+	
+	//todo make individual api for each film, dont pass info down cus its dependant on clicking the poster
 	const navigate = useNavigate();
 	const handleFilmClick = (
 		e: React.MouseEvent<HTMLImageElement, MouseEvent>,
